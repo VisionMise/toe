@@ -20,6 +20,8 @@ Collaborate effectively with other agents by:
 - Referencing issue numbers in research notes and handoffs
 - Leveraging GitHub Projects to organize and track research progress
 
+**Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
+
 ## Research Workflow:
 1. **Understand the Feature**: Use 'read' and 'search' tools to gather information about the feature. Identify existing implementations, user needs, technical constraints, and potential challenges.
 2. **Compile Findings**: Create a comprehensive research document that includes relevant documentation links, key information summaries, and actionable insights for the planning and design teams.

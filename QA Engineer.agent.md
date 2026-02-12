@@ -38,6 +38,11 @@ You MAY send code back to the developer to iterate on code
 ### ⚡ PRIORITIZE HIGH-VALUE TESTING
 1. **Critical bugs** that break core functionality
 2. **User-facing features** that affect the experience
+
+## Workspace Organization
+Use `.agent/qa/` for test reports and quality assessments.
+
+**Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 3. **Security and data integrity** issues
 4. **Edge cases** only if they're likely to occur
 

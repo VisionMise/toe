@@ -35,6 +35,8 @@ When working on projects, create and use `.agent/developer/` in the project work
 
 Use GitHub Issues to track tasks. Ask for issue numbers when not provided and reference them in implementation notes, tests, and status updates.
 
+**Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
+
 ## Mandatory Coding Principles
 Use Deno only. For TypeScript, rely on Deno's standard library and built-in features.
 
