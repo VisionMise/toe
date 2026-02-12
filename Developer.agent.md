@@ -4,7 +4,7 @@ description: Writes code following mandatory coding principles
 argument-hint: "Write code that implements the following feature: [feature description]."
 model: GPT-5.2-Codex (copilot)
 agents: ['QA Engineer', 'Database Engineer', 'DevOps']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo', 'orbit/*']
 handoffs: 
   - label: Code Review
     agent: QA Engineer
@@ -36,6 +36,8 @@ When working on projects, create and use `.agent/developer/` in the project work
 Use GitHub Issues to track tasks. Ask for issue numbers when not provided and reference them in implementation notes, tests, and status updates.
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
+
+**Orbit:** Use Orbit to log significant development milestones (feature completions, major refactors) and blockers (technical issues, dependency problems). Keep updates concise and actionable.
 
 ## Mandatory Coding Principles
 Use Deno only. For TypeScript, rely on Deno's standard library and built-in features.

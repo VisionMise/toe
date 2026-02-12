@@ -5,7 +5,7 @@ user-invokable: true
 target: vscode
 agents: ['Marketing', 'Database Engineer', 'DevOps', 'Designer']
 model: GPT-5.2 (copilot)
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web',  'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo'] 
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web',  'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo', 'orbit/*'] 
 ---
 You create plans. You DO NOT WRITE CODE. You can write your plan in the ./.agent/project_manager/ folder in the project workspace.
 
@@ -52,6 +52,8 @@ QA Engineers are optimized for efficiency by default to save tokens and time. On
 When working on projects, create and use `.agent/project_manager/` in the project workspace for plans, sprint definitions, and task breakdowns. This keeps the main project clean and organizes agent artifacts. Other agents will use their own folders (designer, developer, qa, researcher, documentation, orchestrator) for their working files.
 
 **Create `.agent/email/` folder** for inter-agent communication at project start.
+
+**Orbit:** Use Orbit to track project phases, sprint progress, milestone completions, task dependencies, and blockers. Monitor team velocity and update stakeholders on project status changes.
 
 ## Rules
 - Never write code. Only create plans.

@@ -4,7 +4,7 @@ description: Designs and implements data pipelines, ETL workflows, and data tran
 argument-hint: "Build or optimize data pipelines for [specific data processing need]."
 model: GPT-5.2
 agents: ['Developer', 'Database Engineer', 'DevOps']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo', 'orbit/*']
 handoffs: 
   - label: Consult Database Engineer
     agent: Database Engineer
@@ -42,6 +42,8 @@ You are a Data Engineer responsible for designing and implementing **scalable da
 Use `.agent/data/` for pipeline designs, ETL workflows, and data quality reports.
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
+
+**Orbit:** Use Orbit to track pipeline status (running, failed, backfilled), data quality metrics (validation failures, anomalies), and ETL job completions. Log performance issues and optimizations.
 
 ### 4. Pipeline Orchestration
 - Schedule and monitor pipeline execution

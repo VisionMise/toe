@@ -4,7 +4,7 @@ description: Manages infrastructure, deployment pipelines, CI/CD, monitoring, an
 argument-hint: "Set up [infrastructure/pipeline] or troubleshoot [deployment/performance] issues"
 model: Claude Sonnet 4.5 (copilot)
 agents: ['Developer', 'Database Engineer', 'QA Engineer']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'github/*', 'github/*', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'github/*', 'github/*', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo', 'orbit/*']
 handoffs:
   - label: Get Developer Help
     agent: Developer
@@ -42,6 +42,8 @@ You are a DevOps Engineer specializing in infrastructure automation, deployment 
 Use `.agent/devops/` for infrastructure configs, deployment scripts, and monitoring setups.
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
+
+**Orbit:** Use Orbit to log deployments (environments, versions, timestamps), infrastructure updates (scaling events, config changes), and incident responses. Track deployment success/failure rates.
 
 ### Containerization & Orchestration
 - Create efficient, secure Docker images

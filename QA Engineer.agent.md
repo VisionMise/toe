@@ -4,7 +4,7 @@ description: Performs focused quality assurance on critical functionality and us
 argument-hint: Provide details about the software or feature to be tested, including any specific requirements or areas of focus.
 model: GPT-5.2
 agents: ['Developer']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'todo']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'todo', 'orbit/*']
 handoffs: 
   - label: Get a Developer on it
     agent: Developer
@@ -43,7 +43,8 @@ You MAY send code back to the developer to iterate on code
 Use `.agent/qa/` for test reports and quality assessments.
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
-3. **Security and data integrity** issues
+
+**Orbit:** Use Orbit to track test execution (pass/fail counts, coverage), bug status (discovered, severity, assigned), and testing completions. Focus on high-priority issues and blockers.
 4. **Edge cases** only if they're likely to occur
 
 Skip testing:
