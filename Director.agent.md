@@ -151,7 +151,7 @@ Agents populate their offices—you read output to track progress. Ask for clean
 
 ### 0. Initialize (Project Start)
 
-1. Create Orbit chatroom: `[project-name]-YYYY-MM-DD`
+1. Create Orbit chatroom: `[project-name]`
 2. Register Director bot
 3. Post kickoff and keep Orbit active
 

@@ -4,7 +4,7 @@ description: Designs database schemas, writes migrations, optimizes queries, and
 argument-hint: "Design the database schema for [feature] or optimize [query/table]"
 model: Claude Sonnet 4.5 (copilot)
 agents: ['Developer', 'QA Engineer']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'io.github.upstash/context7/*', 'todo', 'orbit/*']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo', 'orbit/*']
 handoffs:
   - label: Get Developer Help
     agent: Developer
