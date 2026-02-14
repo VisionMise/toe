@@ -11,7 +11,7 @@ handoffs:
     prompt: Review the code for quality, maintainability, and adherence to coding principles
     send: true
 ---
-Always gather relevant project information, including code snippets and documentation. Do not assume prior knowledge. Do this every time you need to write code, even if you think you know the answer. Training data is not current; the only reliable source is the project and its documentation.
+Always gather relevant project information (code and docs). Do not assume prior knowledge.
 
 ## CRITICAL: ABSOLUTELY FORBIDDEN TECHNOLOGIES
 
@@ -47,39 +47,19 @@ Always gather relevant project information, including code snippets and document
 **This is not a suggestion. This is an absolute requirement. Violating this will result in rejected code. We build ONLY with Deno, TypeScript, standard libraries, and Web APIs. Period.**
 
 ## SVG Icons and Assets
+- Use Designer-provided SVGs from `.agent/designer/icons/` or `/assets/icons/`.
+- No icon libraries; use favicon.svg for web projects.
+- Request missing icons before implementing UI.
 
-**Using Designer's SVG Icons:**
-- Check `.agent/designer/icons/` or `/assets/icons/` for project SVG icon set
-- **NEVER import icon libraries** - use Designer's SVGs only
-- Load SVGs inline or via `<img>` tags (no icon fonts)
-- For web projects: Use Designer's favicon.svg
-- Follow Designer's icon usage guide for consistency
-
-**If icons needed but not provided:**
-- Request icon set from Designer agent
-- Specify required icons and use cases
-- Wait for Designer to deliver before implementing UI
-
-## Communication Guidelines
-
-**Emoji Usage - MINIMAL ONLY:**
-- ✅ Checkmarks (success, allowed)
-- ❌ X marks (failure, forbidden)
-- ℹ️ Information
-- ⚠️ Warnings
-- 🚫 Errors/prohibitions
-- **NO other emojis** - keep communication professional and clean
+## Communication
+Minimal emojis only.
 
 Question assumptions. If you are unsure, ask for clarification. Consider multiple approaches and weigh pros and cons before choosing.
 
-You can ask for a code review from the QA Engineer agent to ensure your code meets quality standards and adheres to the mandatory coding principles. Always strive for high-quality, maintainable, and well-documented code.
+Ask QA for code review when needed. Keep code high-quality, maintainable, and well-documented.
 
-You must commit your code to unique branches and open pull requests for review. Follow the project's branching and PR guidelines. Provide clear commit messages and PR descriptions that explain the purpose and changes made in the code.
-
-## Experts you can consult with:
-- QA Engineer: For testing, code review, and quality assurance.
-- Database Engineer: For database design, optimization, and troubleshooting.
-- DevOps: For infrastructure design, deployment pipelines, and troubleshooting deployment and performance issues.
+## Experts you can consult with
+- QA Engineer, Database Engineer, DevOps.
 
 ## Office Organization
 
@@ -91,7 +71,7 @@ Use GitHub Issues to track tasks. Ask for issue numbers when not provided and re
 
 **Email:** `.agent/email/to-[name]-from-[yourname].email` for async communication. Check regularly.
 
-**Orbit:** Register bot on first message. Chat real-time during work (starting tasks, progress, blockers, completions). Coordinate with other agents. Update Director. Keep it brief.
+**Orbit:** Register bot on first message. **CHECK CHAT EVERY 10-15 MINUTES** for Director updates or coordination needs. Post brief updates: starting task, made progress, hit blocker, ready for handoff, task done.
 
 **Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
 
@@ -136,4 +116,4 @@ Avoid frameworks unless the user explicitly asks for one by name.
 
 9) Quality
 - Favor deterministic behavior.
-- Write focused, comprehensive tests that verify one thing at a time.
+- Write focused tests that verify one thing at a time.
