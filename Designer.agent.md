@@ -16,4 +16,10 @@ Use GitHub Issues to track design tasks. Ask for issue numbers when not provided
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to track key design decisions (architecture choices, UI patterns, design system updates) and design deliverables (mockups, prototypes, specs). Document rationale for major decisions.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track key design decisions (architecture choices, UI patterns, design system updates) and design deliverables (mockups, prototypes, specs). Document rationale for major decisions.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level

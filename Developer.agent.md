@@ -37,7 +37,13 @@ Use GitHub Issues to track tasks. Ask for issue numbers when not provided and re
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to log significant development milestones (feature completions, major refactors) and blockers (technical issues, dependency problems). Keep updates concise and actionable.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Log significant development milestones (feature completions, major refactors) and blockers (technical issues, dependency problems). Keep updates concise and actionable.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
 
 ## Mandatory Coding Principles
 Use Deno only. For TypeScript, rely on Deno's standard library and built-in features.

@@ -44,7 +44,14 @@ Use `.agent/qa/` for test reports and quality assessments.
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to track test execution (pass/fail counts, coverage), bug status (discovered, severity, assigned), and testing completions. Focus on high-priority issues and blockers.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track test execution (pass/fail counts, coverage), bug status (discovered, severity, assigned), and testing completions. Focus on high-priority issues and blockers.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
+
 4. **Edge cases** only if they're likely to occur
 
 Skip testing:

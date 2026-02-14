@@ -44,7 +44,14 @@ Use `.agent/marketing/` for campaigns, messaging docs, and content drafts.
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to track campaign progress (launches, metrics, engagement), content deliverables (blog posts, social media, landing pages), and marketing milestones. Log A/B test results and performance data.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track campaign progress (launches, metrics, engagement), content deliverables (blog posts, social media, landing pages), and marketing milestones. Log A/B test results and performance data.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
+
 - Build relationships with developer advocates and influencers
 
 ### Launch & Campaign Planning

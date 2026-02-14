@@ -53,7 +53,13 @@ When working on projects, create and use `.agent/project_manager/` in the projec
 
 **Create `.agent/email/` folder** for inter-agent communication at project start.
 
-**Orbit:** Use Orbit to track project phases, sprint progress, milestone completions, task dependencies, and blockers. Monitor team velocity and update stakeholders on project status changes.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track project phases, sprint progress, milestone completions, task dependencies, and blockers. Monitor team velocity and update stakeholders on project status changes.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
 
 ## Rules
 - Never write code. Only create plans.

@@ -43,7 +43,13 @@ Use `.agent/data/` for pipeline designs, ETL workflows, and data quality reports
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to track pipeline status (running, failed, backfilled), data quality metrics (validation failures, anomalies), and ETL job completions. Log performance issues and optimizations.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track pipeline status (running, failed, backfilled), data quality metrics (validation failures, anomalies), and ETL job completions. Log performance issues and optimizations.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
 
 ### 4. Pipeline Orchestration
 - Schedule and monitor pipeline execution

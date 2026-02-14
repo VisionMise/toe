@@ -43,7 +43,13 @@ Use `.agent/devops/` for infrastructure configs, deployment scripts, and monitor
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to log deployments (environments, versions, timestamps), infrastructure updates (scaling events, config changes), and incident responses. Track deployment success/failure rates.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Log deployments (environments, versions, timestamps), infrastructure updates (scaling events, config changes), and incident responses. Track deployment success/failure rates.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
 
 ### Containerization & Orchestration
 - Create efficient, secure Docker images

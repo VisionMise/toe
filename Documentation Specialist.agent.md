@@ -13,4 +13,10 @@ Use GitHub Issues to track documentation tasks. Ask for issue numbers when not p
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to track documentation tasks (pages created, updates needed, reviews completed) and documentation deliverables. Note areas needing documentation and completion status.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track documentation tasks (pages created, updates needed, reviews completed) and documentation deliverables. Note areas needing documentation and completion status.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level

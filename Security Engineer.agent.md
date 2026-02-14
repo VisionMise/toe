@@ -44,7 +44,14 @@ Use `.agent/security/` for security audits, vulnerability reports, and remediati
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to track security audits (scope, findings, severity), vulnerability remediation (CVEs, patches applied, status), and security control implementations. Document critical security decisions.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track security audits (scope, findings, severity), vulnerability remediation (CVEs, patches applied, status), and security control implementations. Document critical security decisions.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
+
 - Track and prioritize remediation efforts
 
 ### 4. Security Implementation

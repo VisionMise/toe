@@ -44,7 +44,14 @@ Use `.agent/database/` for schemas, migrations, and query optimization notes.
 
 **Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
 
-**Orbit:** Use Orbit to track schema changes (new tables, column additions, index creation) and migrations (version numbers, rollback plans). Log performance optimization efforts and their results.
+**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Track schema changes (new tables, column additions, index creation) and migrations (version numbers, rollback plans). Log performance optimization efforts and their results.
+
+**Blockers:** If blocked, immediately post to orbit chatroom with:
+- What you're blocked on
+- What you've already tried
+- Who/what you need to proceed
+- Urgency level
+
 - Balance read vs write performance based on use cases
 
 ### Data Integrity & Security
