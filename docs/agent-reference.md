@@ -159,15 +159,31 @@ Can consult: QA Engineer, Database Engineer, DevOps
 vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*, todo, orbit/*
 
 ### Mandatory Coding Principles
-- **Deno only** (no npm or Node.js)
-- Use Deno standard library
-- Prefer JSR over CDN/NPM
-- No frameworks (unless explicitly requested)
-- No CSS frameworks, icon libraries
-- Use SVGs for icons
-- No build tools (Deno handles everything)
+
+**ABSOLUTELY FORBIDDEN (NEVER USE):**
+- ❌ Node.js (FORBIDDEN)
+- ❌ npm, pnpm, bun, or ANY Node package managers (FORBIDDEN)
+- ❌ package.json files (FORBIDDEN)
+- ❌ node_modules directories (FORBIDDEN)
+- ❌ JavaScript frameworks: React, Vue, Angular, Svelte, etc. (FORBIDDEN)
+- ❌ CSS frameworks: Tailwind, Bootstrap, etc. (FORBIDDEN)
+- ❌ Icon libraries (FORBIDDEN)
+- ❌ Build tools, bundlers, transpilers, minifiers (FORBIDDEN)
+- ❌ Webpack, Vite, Rollup, esbuild, Babel, etc. (FORBIDDEN)
+
+**ONLY ALLOWED TECHNOLOGIES:**
+- ✅ Deno (ONLY runtime)
+- ✅ TypeScript (vanilla, pure)
+- ✅ Deno standard library
+- ✅ Web APIs
+- ✅ JSR packages (only when absolutely necessary)
+- ✅ SVGs for all icons
+- ✅ Vanilla everything - no frameworks, no abstractions
+
+**Additional Principles:**
 - Question assumptions
 - Ask for clarification when unsure
+- No build steps - Deno runs TypeScript directly
 
 ### Workflow
 1. Gather project information

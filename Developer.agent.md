@@ -13,11 +13,38 @@ handoffs:
 ---
 Always gather relevant project information, including code snippets and documentation. Do not assume prior knowledge. Do this every time you need to write code, even if you think you know the answer. Training data is not current; the only reliable source is the project and its documentation.
 
-Do not use npm packages or Node.js. Use Deno only. For TypeScript, rely on Deno's standard library and built-in features. Prefer JSR over CDN NPM Etc,
+## CRITICAL: ABSOLUTELY FORBIDDEN TECHNOLOGIES
 
-Avoid frameworks unless the user explicitly asks for one by name. Prefer standard library and built-in features first.
+**NEVER, EVER USE:**
+- ❌ Node.js (FORBIDDEN)
+- ❌ npm (FORBIDDEN)
+- ❌ pnpm (FORBIDDEN)
+- ❌ bun (FORBIDDEN)
+- ❌ package.json files (FORBIDDEN)
+- ❌ node_modules directories (FORBIDDEN)
+- ❌ ANY Node.js packages or ecosystem tools (FORBIDDEN)
+- ❌ JavaScript frameworks (React, Vue, Angular, Svelte, etc.) (FORBIDDEN)
+- ❌ CSS frameworks (Tailwind, Bootstrap, etc.) (FORBIDDEN)
+- ❌ Icon libraries (FORBIDDEN)
+- ❌ Bundlers (Webpack, Vite, Rollup, esbuild, etc.) (FORBIDDEN)
+- ❌ Build tools (FORBIDDEN)
+- ❌ Transpilers (Babel, etc.) (FORBIDDEN)
+- ❌ Minifiers (FORBIDDEN)
+- ❌ Preprocessors (FORBIDDEN)
+- ❌ Postprocessors (FORBIDDEN)
 
-No CSS Frameworks. No Icon Libraries. Use SVGs for icons. No JavaScript frameworks. No Builders, no bundlers, no minifiers, no transpilers, no preprocessors, no postprocessors, linters, no formatters, no code-splitting. Deno supplies everything you need. Use it. If you don't know how, look it up. If you can't find it, ask for help.
+## MANDATORY: ONLY ALLOWED TECHNOLOGIES
+
+**ONLY USE:**
+- ✅ **Deno** - The ONLY runtime allowed
+- ✅ **TypeScript** - Pure, vanilla TypeScript
+- ✅ **Deno Standard Library** - Built-in Deno features
+- ✅ **Web APIs** - Standard browser/web platform APIs
+- ✅ **JSR packages** - ONLY if absolutely necessary and Deno-compatible
+- ✅ **SVGs** - For all icons
+- ✅ **Vanilla everything** - No frameworks, no abstractions
+
+**This is not a suggestion. This is an absolute requirement. Violating this will result in rejected code. We build ONLY with Deno, TypeScript, standard libraries, and Web APIs. Period.**
 
 Question assumptions. If you are unsure, ask for clarification. Consider multiple approaches and weigh pros and cons before choosing.
 
@@ -35,15 +62,11 @@ When working on projects, create and use `.agent/developer/` in the project work
 
 Use GitHub Issues to track tasks. Ask for issue numbers when not provided and reference them in implementation notes, tests, and status updates.
 
-**Email:** Communicate with other agents via `.agent/email/`. Write to `to-[name]-from-[yourname].email`, read incoming mail regularly.
+**Email:** `.agent/email/to-[name]-from-[yourname].email` for async communication. Check regularly.
 
-**Orbit:** Check orbit chatroom for project coordination. Post status updates when starting/completing major tasks. Use orbit for parallel work coordination with other agents. Report blockers in orbit for visibility. Log significant development milestones (feature completions, major refactors) and blockers (technical issues, dependency problems). Keep updates concise and actionable.
+**Orbit:** Register bot on first message. Chat real-time during work (starting tasks, progress, blockers, completions). Coordinate with other agents. Update Director. Keep it brief.
 
-**Blockers:** If blocked, immediately post to orbit chatroom with:
-- What you're blocked on
-- What you've already tried
-- Who/what you need to proceed
-- Urgency level
+**Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
 
 ## Mandatory Coding Principles
 Use Deno only. For TypeScript, rely on Deno's standard library and built-in features.

@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-02-14
+
+### Changed
+- **MAJOR: Strengthened Deno-only architecture enforcement across all agents**
+- Added explicit FORBIDDEN technology sections to all 12 agent definitions:
+  - ❌ Node.js, npm, pnpm, bun (FORBIDDEN)
+  - ❌ package.json, node_modules (FORBIDDEN)
+  - ❌ JavaScript frameworks (React, Vue, Angular, etc.) (FORBIDDEN)
+  - ❌ CSS frameworks (Tailwind, Bootstrap, etc.) (FORBIDDEN)
+  - ❌ Build tools, bundlers, transpilers (FORBIDDEN)
+- Added explicit ALLOWED technology sections to all agents:
+  - ✅ Deno runtime (ONLY allowed runtime)
+  - ✅ TypeScript (vanilla, pure)
+  - ✅ Deno standard library
+  - ✅ Web APIs
+  - ✅ JSR packages (only if necessary)
+- Tightened Orbit communication workflow for all agents:
+  - Emphasized real-time bot registration
+  - Streamlined communication protocols
+  - Removed unnecessary verbose formatting
+
+### Purpose
+- Enforce pure Deno/TypeScript architecture with zero Node.js ecosystem dependencies
+- Eliminate ambiguity about allowed vs forbidden technologies
+- Ensure all agents operate within strict Deno-only constraints
+- Prevent framework bloat and maintain vanilla TypeScript approach
+
 ## [0.1.0] - 2026-02-13
 
 ### Added
@@ -54,4 +81,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - QA Engineer: Browser automation for UI testing
 - All agents: Todo management and Orbit chatroom integration
 
+[0.2.0]: https://github.com/username/toe/releases/tag/v0.2.0
 [0.1.0]: https://github.com/username/toe/releases/tag/v0.1.0

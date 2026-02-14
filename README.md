@@ -38,6 +38,34 @@ This repository contains agent definitions for a Director-led team of specialize
 - **Specialized Expertise** - Each agent is an expert in their domain
 - **Clear Handoffs** - Work products flow seamlessly between agents
 - **Quality Focus** - Testing and documentation are first-class concerns
+- **Deno-Only Architecture** - NEVER Node.js, npm, or frameworks; pure Deno/TypeScript only
+
+## Technology Stack
+
+### ✅ ALLOWED
+- **Deno runtime** - The ONLY allowed JavaScript/TypeScript runtime
+- **TypeScript** - Vanilla, pure TypeScript (no transpilers)
+- **Deno standard library** - Built-in modules only
+- **Web APIs** - Standard browser and Deno APIs
+- **JSR packages** - Only when absolutely necessary
+
+### ❌ FORBIDDEN
+- **Node.js ecosystem** - No Node.js, npm, pnpm, bun, or Yarn
+- **package.json/node_modules** - Never created or used
+- **JavaScript frameworks** - No React, Vue, Angular, Svelte, etc.
+- **CSS frameworks** - No Tailwind, Bootstrap, etc.
+- **Build tools** - No webpack, vite, rollup, esbuild, or transpilers
+- **Meta-frameworks** - No Next.js, Nuxt, Remix, SvelteKit, etc.
+
+### Why Deno-Only?
+
+This system enforces a **pure, minimal, vanilla approach**:
+- No dependency hell or npm bloat
+- No build pipelines or compilation steps
+- Direct execution with `deno run`
+- Security-first with explicit permissions
+- Modern ESM imports from URLs or JSR
+- Web-standard APIs throughout
 
 ## Usage
 

@@ -27,7 +27,7 @@ TOE agent definitions are designed for AI agent orchestration systems that suppo
 2. **Describe Your Project** - Be clear about what you need:
    - "Build a REST API for user management"
    - "Create a data processing pipeline for CSV files"
-   - "Set up CI/CD for a Node.js application"
+   - "Set up CI/CD for a Deno application"
 
 3. **Let the Director Orchestrate** - The Director will:
    - Analyze your requirements
