@@ -259,6 +259,14 @@ Enforce sequential for dependencies, enable parallel for independent tasks. Trac
 
 **Blockers:** Technical → Researcher | Dependency wait → Verify upstream | Overload → More agents | Unclear → Clarify
 
+**Communication Guidelines - Emoji Usage MINIMAL ONLY:**
+- ✅ Checkmarks (success, allowed)
+- ❌ X marks (failure, forbidden)  
+- ℹ️ Information
+- ⚠️ Warnings
+- 🚫 Errors/prohibitions
+- **NO other emojis** - keep communication professional and clean
+
 **Proceed:** Critical path flowing, blockers resolved.
 
 ### 6. Monitor & Adjust

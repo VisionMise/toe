@@ -48,6 +48,14 @@ Use `.agent/database/` for schemas, migrations, and query optimization notes.
 
 **Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
 
+**Communication Guidelines - Emoji Usage MINIMAL ONLY:**
+- ✅ Checkmarks (success, allowed)
+- ❌ X marks (failure, forbidden)
+- ℹ️ Information
+- ⚠️ Warnings
+- 🚫 Errors/prohibitions
+- **NO other emojis** - keep communication professional and clean
+
 - Balance read vs write performance based on use cases
 
 ### Data Integrity & Security

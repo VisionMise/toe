@@ -2,6 +2,21 @@
 
 Complete reference for all 12 agent types in the TOE system.
 
+## Communication Standards
+
+**All agents follow minimal emoji usage policy:**
+- \u2705 Checkmarks (success, allowed)
+- \u274c X marks (failure, forbidden)
+- \u2139\ufe0f Information
+- \u26a0\ufe0f Warnings
+- \ud83d\udeab Errors/prohibitions
+- **NO other emojis** - professional, clean communication only
+
+**Communication Channels:**
+- **Email**: `.agent/email/to-[name]-from-[yourname].email` for async
+- **Orbit**: Real-time chat for status, blockers, coordination
+- **GitHub Issues**: Task tracking and references
+
 ---
 
 ## Director
@@ -128,11 +143,21 @@ vscode, execute, read, agent, edit, search, web, todo, orbit/*
 
 ### Workspace
 `.agent/designer/` - Mockups, specs, design notes, architecture diagrams
+`.agent/designer/icons/` - SVG icon set development
+
+### SVG Icon Workflow
+For icon-heavy projects:
+1. Create complete SVG icon set at project start
+2. Include common icons: navigation, actions, status, UI elements
+3. Web projects: Always include favicon.svg (and favicon.ico if needed)
+4. Deliver finalized SVGs to `/assets/icons/` or `/public/icons/`
+5. Provide icon usage guide (sizes, colors, accessibility)
 
 ### Communication
 - Email for design reviews
 - Orbit for major design decisions
 - Document rationale for key choices
+- **Emoji usage**: ✅ ❌ ℹ️ ⚠️ 🚫 only - no other emojis
 
 ---
 
@@ -184,6 +209,8 @@ vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*
 - Question assumptions
 - Ask for clarification when unsure
 - No build steps - Deno runs TypeScript directly
+- Use Designer's SVG icons - never import icon libraries
+- For web projects, use Designer's favicon.svg
 
 ### Workflow
 1. Gather project information
@@ -201,6 +228,7 @@ vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*
 - Email for technical questions
 - Orbit for status updates and blockers
 - Reference GitHub issue numbers
+- **Emoji usage**: ✅ ❌ ℹ️ ⚠️ 🚫 only - no other emojis
 
 ---
 

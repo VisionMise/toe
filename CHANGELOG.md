@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **SVG Icon Workflow**: Designer now creates complete SVG icon sets for projects
+  - Icon set development in `.agent/designer/icons/`
+  - Includes favicons for web projects
+  - Designer provides icon usage guides
+  - Developer uses Designer's SVGs (no icon libraries)
+- **Communication Guidelines**: Minimal emoji usage policy for all agents
+  - Allowed: ✅ (checkmarks), ❌ (X marks), ℹ️ (info), ⚠️ (warnings), 🚫 (errors)
+  - No other emojis - professional, clean communication
+
+### Changed
+- Designer agent: Added SVG icon creation workflow and best practices
+- Developer agent: Added guidance on using Designer's SVG icons
+- All agents: Added minimal emoji usage policy
+
 ## [0.2.0] - 2026-02-14
 
 ### Changed

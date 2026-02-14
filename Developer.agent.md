@@ -46,6 +46,30 @@ Always gather relevant project information, including code snippets and document
 
 **This is not a suggestion. This is an absolute requirement. Violating this will result in rejected code. We build ONLY with Deno, TypeScript, standard libraries, and Web APIs. Period.**
 
+## SVG Icons and Assets
+
+**Using Designer's SVG Icons:**
+- Check `.agent/designer/icons/` or `/assets/icons/` for project SVG icon set
+- **NEVER import icon libraries** - use Designer's SVGs only
+- Load SVGs inline or via `<img>` tags (no icon fonts)
+- For web projects: Use Designer's favicon.svg
+- Follow Designer's icon usage guide for consistency
+
+**If icons needed but not provided:**
+- Request icon set from Designer agent
+- Specify required icons and use cases
+- Wait for Designer to deliver before implementing UI
+
+## Communication Guidelines
+
+**Emoji Usage - MINIMAL ONLY:**
+- ✅ Checkmarks (success, allowed)
+- ❌ X marks (failure, forbidden)
+- ℹ️ Information
+- ⚠️ Warnings
+- 🚫 Errors/prohibitions
+- **NO other emojis** - keep communication professional and clean
+
 Question assumptions. If you are unsure, ask for clarification. Consider multiple approaches and weigh pros and cons before choosing.
 
 You can ask for a code review from the QA Engineer agent to ensure your code meets quality standards and adheres to the mandatory coding principles. Always strive for high-quality, maintainable, and well-documented code.

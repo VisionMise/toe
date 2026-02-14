@@ -64,6 +64,14 @@ Use `.agent/data/` for pipeline designs, ETL workflows, and data quality reports
 
 **Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
 
+**Communication Guidelines - Emoji Usage MINIMAL ONLY:**
+- ✅ Checkmarks (success, allowed)
+- ❌ X marks (failure, forbidden)
+- ℹ️ Information
+- ⚠️ Warnings
+- 🚫 Errors/prohibitions
+- **NO other emojis** - keep communication professional and clean
+
 ### 4. Pipeline Orchestration
 - Schedule and monitor pipeline execution
 - Handle dependencies between pipeline stages

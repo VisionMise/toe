@@ -63,6 +63,14 @@ Use `.agent/devops/` for infrastructure configs, deployment scripts, and monitor
 
 **Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
 
+**Communication Guidelines - Emoji Usage MINIMAL ONLY:**
+- ✅ Checkmarks (success, allowed)
+- ❌ X marks (failure, forbidden)
+- ℹ️ Information
+- ⚠️ Warnings
+- 🚫 Errors/prohibitions
+- **NO other emojis** - keep communication professional and clean
+
 ### Containerization & Orchestration
 - Create efficient, secure Docker images
 - Write Kubernetes manifests and Helm charts

@@ -75,6 +75,14 @@ When working on projects, create and use `.agent/project_manager/` in the projec
 
 **Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
 
+**Communication Guidelines - Emoji Usage MINIMAL ONLY:**
+- ✅ Checkmarks (success, allowed)
+- ❌ X marks (failure, forbidden)
+- ℹ️ Information
+- ⚠️ Warnings
+- 🚫 Errors/prohibitions
+- **NO other emojis** - keep communication professional and clean
+
 ## Rules
 - Never write code. Only create plans.
 - Ask for clarification if the prompt is vague or missing details necessary for planning.
