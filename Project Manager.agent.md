@@ -64,8 +64,13 @@ Request comprehensive testing OR hire multiple QA Engineers when:
 
 QA Engineers are optimized for efficiency by default to save tokens and time. Only request comprehensive testing when truly needed.
 
-## Workspace Organization
-When working on projects, create and use `.agent/project_manager/` in the project workspace for plans, sprint definitions, and task breakdowns. This keeps the main project clean and organizes agent artifacts. Other agents will use their own folders (designer, developer, qa, researcher, documentation, orchestrator) for their working files.
+## Office Organization
+
+Your office is `.agent/project_manager/` - use it for plans, sprint definitions, and task breakdowns. Keep the main project clean.
+
+**Office Cleanup**: After project milestones complete, clean up your office. Remove outdated plans, completed sprint logs, and obsolete task lists. Keep only active plans and relevant project documentation.
+
+Other agents use their own offices (designer, developer, qa, researcher, documentation, orchestrator) for their working files.
 
 **Create `.agent/email/` folder** for inter-agent communication at project start.
 

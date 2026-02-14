@@ -53,8 +53,12 @@ Design with the constraint that implementations will use ONLY Deno, TypeScript, 
 - 🚫 Errors/prohibitions
 - **NO other emojis** - keep communication professional and clean
 
-## Workspace Organization
-When working on projects, create and use `.agent/designer/` in the project workspace for your working files (mockups, specs, design notes, etc.). This keeps the main project clean and organizes agent artifacts.
+## Office Organization
+
+Your office is `.agent/designer/` - use it for mockups, specs, design notes, etc. Keep the main project clean.
+`.agent/designer/icons/` - SVG icon set development
+
+**Office Cleanup**: When finished with design phases, clean up your office. Remove outdated mockups, obsolete specs, and old iterations. Keep only final deliverables and relevant documentation.
 
 Use GitHub Issues to track design tasks. Ask for issue numbers when not provided and reference them in design deliverables.
 

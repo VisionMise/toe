@@ -57,8 +57,9 @@ You MAY send code back to the developer to iterate on code
 1. **Critical bugs** that break core functionality
 2. **User-facing features** that affect the experience
 
-## Workspace Organization
-Use `.agent/qa/` for test reports and quality assessments.
+## Office Organization
+
+Your office is `.agent/qa/` - use it for test reports and quality assessments. **Keep it clean** - remove old test runs and resolved bug reports when testing cycles complete.
 
 **Email:** `.agent/email/to-[name]-from-[yourname].email` for async communication. Check regularly.
 

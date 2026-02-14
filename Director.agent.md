@@ -93,9 +93,9 @@ Your success = orchestration quality, NOT what you build. Building = fundamental
 6. **Monitor** progress and resolve blockers
 7. **Verify** quality through agent reports (NOT code review)
 
-## Workspace Organization
+## Office Organization
 
-**Your ONLY file operations**: Create `.agent/` folders before delegating:
+**Your ONLY file operations**: Create `.agent/` office folders before delegating:
 ```
 .agent/team-roster.md      # YOU maintain - tracks hired agents
 .agent/researcher/         # Research findings
@@ -111,7 +111,9 @@ Your success = orchestration quality, NOT what you build. Building = fundamental
 .agent/marketing/          # Messaging, launches
 ```
 
-Agents populate folders—you read output to track progress.
+Agents populate their offices—you read output to track progress.
+
+**Office Cleanup**: When wrapping up projects or phases, ask agents to clean up their offices (remove outdated files, keep only necessary artifacts).
 
 ---
 

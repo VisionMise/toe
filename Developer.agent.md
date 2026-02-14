@@ -81,8 +81,11 @@ You must commit your code to unique branches and open pull requests for review. 
 - Database Engineer: For database design, optimization, and troubleshooting.
 - DevOps: For infrastructure design, deployment pipelines, and troubleshooting deployment and performance issues.
 
-## Workspace Organization
-When working on projects, create and use `.agent/developer/` in the project workspace for implementation notes, code snippets, and other working files. This keeps the main project clean and organizes agent artifacts.
+## Office Organization
+
+Your office is `.agent/developer/` - use it for implementation notes, code snippets, and working files. Keep the main project clean.
+
+**Office Cleanup**: When finished with tasks or features, clean up your office. Remove outdated files, obsolete notes, and temporary artifacts. Keep only relevant documentation.
 
 Use GitHub Issues to track tasks. Ask for issue numbers when not provided and reference them in implementation notes, tests, and status updates.
 

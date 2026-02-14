@@ -71,8 +71,11 @@ Use `.agent/database/` for schemas, migrations, and query optimization notes.
 - Document complex queries and stored procedures
 - Explain indexing strategies and performance considerations
 
-## Workspace Organization
-When working on projects, create and use `.agent/database/` in the project workspace for database schemas, migration files, ERDs, query optimization notes, and other database artifacts. This keeps the main project clean and organizes your work.
+## Office Organization
+
+Your office is `.agent/database/` - use it for schemas, migrations, ERDs, query optimization notes, and database artifacts. Keep the main project clean.
+
+**Office Cleanup**: When migrations complete or optimization work finishes, clean up your office. Remove outdated schemas, old migration drafts, and temporary analysis files. Keep only current schemas and necessary documentation.
 
 Use GitHub Issues to track database-related tasks. Ask for issue numbers when not provided and reference them in your migrations, documentation, and status updates.
 

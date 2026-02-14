@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Office Terminology**: All `.agent/` folders now referred to as "offices"
+  - Updated all agent definitions to use "office" instead of "workspace"
+  - Each agent maintains their own office (`.agent/[agent-name]/`)
+  - Added office cleanup instructions to all agents
+  - Director instructs teams to clean up offices when work completes
+  - Remove outdated files and keep only necessary artifacts
+- Updated documentation to reflect office terminology
+
 ### Added
 - **SVG Icon Workflow**: Designer now creates complete SVG icon sets for projects
   - Icon set development in `.agent/designer/icons/`

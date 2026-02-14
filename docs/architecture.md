@@ -43,14 +43,14 @@ Each agent is defined in a `.agent.md` file with:
 - **Instructions** - Role-specific guidelines and rules
 - **Communication** - Email, orbit, and handoff protocols
 
-### Workspace Organization
+### Office Organization
 ```
 project/
-├── .agent/                    # Agent workspace (not in version control)
-│   ├── developer/            # Developer working files
-│   ├── designer/             # Design specs and mockups
-│   ├── qa/                   # Test reports
-│   ├── documentation/        # Documentation drafts
+├── .agent/                    # Agent offices (not in version control)
+│   ├── developer/            # Developer office
+│   ├── designer/             # Designer office
+│   ├── qa/                   # QA office
+│   ├── documentation/        # Documentation office
 │   ├── team-roster.md        # Active team members
 │   └── email/                # Inter-agent communication
 │       ├── to-developer-from-director.email
@@ -197,7 +197,7 @@ Agents can be combined in custom patterns based on project needs. The Director a
 3. **Document Decisions** - Record architectural choices
 4. **Iterative Delivery** - Ship incrementally
 5. **Quality Gates** - QA before documentation
-6. **Clean Workspace** - Use `.agent/` for working files
+6. **Clean Office** - Use `.agent/` for working files, clean up when done
 
 ## Troubleshooting
 

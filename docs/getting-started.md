@@ -74,14 +74,16 @@ Hires Documentation Specialist: Creates user guides
 ## Key Concepts
 
 ### Delegation Over Implementation
-The Director never writes code or creates project files (except `.agent/` workspace folders). All implementation is delegated to specialists.
+The Director never writes code or creates project files (except `.agent/` office folders). All implementation is delegated to specialists.
 
-### Workspace Organization
-Agents create their working files in `.agent/<agent-name>/` directories:
+### Office Organization
+Agents create their working files in `.agent/<agent-name>/` offices:
 - `.agent/developer/` - Implementation notes
 - `.agent/designer/` - Design mockups and specs
 - `.agent/qa/` - Test reports
 - `.agent/documentation/` - Documentation drafts
+
+Agents clean up their offices when work completes, removing outdated files and keeping only necessary artifacts.
 
 ### Communication Methods
 Agents coordinate through:
@@ -94,7 +96,7 @@ Agents coordinate through:
 1. **Be Specific** - Clear requirements lead to better results
 2. **Trust the Process** - Let the Director handle coordination
 3. **Start Simple** - Begin with core functionality, expand later
-4. **Review Outputs** - Check `.agent/` folders for intermediate work
+4. **Review Outputs** - Check `.agent/` offices for intermediate work
 
 ## Common Use Cases
 

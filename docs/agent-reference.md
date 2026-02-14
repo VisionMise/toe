@@ -36,7 +36,7 @@ Builds complex software projects by hiring and coordinating a team of specialize
 - Ensure quality delivery
 
 ### Prime Directive
-**NEVER creates, edits, or modifies ANY project files** (except `.agent/` workspace folders and `team-roster.md`)
+**NEVER creates, edits, or modifies ANY project files** (except `.agent/` office folders and `team-roster.md`)
 
 ### Available Agents
 Can hire: Project Manager, Researcher, Designer, Developer, QA Engineer, Documentation Specialist, Database Engineer, DevOps, Marketing, Data Engineer, Security Engineer
@@ -71,7 +71,7 @@ Investigates technologies, best practices, and design patterns. Provides researc
 - Compare alternatives
 - Provide recommendations with rationale
 
-### Workspace
+### Office
 `.agent/researcher/` - Research findings, comparisons, recommendations
 
 ### Communication
@@ -115,7 +115,7 @@ vscode, execute, read, agent, edit, search, web, mermaid, github/*, todo, orbit/
 - **Default**: Basic testing for most cases
 - **Comprehensive**: Projects >25K LOC, business-critical features, security-sensitive code
 
-### Workspace
+### Office
 `.agent/project_manager/` - Plans, timelines, status reports
 
 ---
@@ -141,7 +141,7 @@ Designs user interfaces, user experiences, system architecture, and data models.
 ### Tools
 vscode, execute, read, agent, edit, search, web, todo, orbit/*
 
-### Workspace
+### Office
 `.agent/designer/` - Mockups, specs, design notes, architecture diagrams
 `.agent/designer/icons/` - SVG icon set development
 
@@ -221,8 +221,8 @@ vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*
 6. Open pull request
 7. Request code review from QA
 
-### Workspace
-`.agent/developer/` - Implementation notes, code snippets, working files
+### Office
+`.agent/developer/` - Implementation notes, code snippets (clean up when tasks complete)
 
 ### Communication
 - Email for technical questions
@@ -274,7 +274,7 @@ vscode, execute, read, agent, edit, search, web, playwright/*, todo, orbit/*
 - **Default**: Targeted, efficient testing
 - **Comprehensive**: Only when explicitly requested (critical systems, >25K LOC)
 
-### Workspace
+### Office
 `.agent/qa/` - Test reports, quality assessments
 
 ### Communication
@@ -307,12 +307,12 @@ Writes all forms of documentation: user guides, API docs, READMEs, changelogs, a
 - Architecture docs
 - Getting started guides
 
-### Workspace
-- `.agent/documentation/` - Working files and drafts
+### Office
+- `.agent/documentation/` - Drafts and working files
 - `./docs/` - Final documentation outputs
 
 ### Communication
-- Read from other `.agent/` folders for context
+- Read from other `.agent/` offices for context
 - Email for clarification on features
 - Orbit for documentation task status
 - Reference GitHub issues in docs
@@ -346,7 +346,7 @@ Designs databases, optimizes queries, manages schemas, and handles database-rela
 - Performance tuning
 - Database selection
 
-### Workspace
+### Office
 `.agent/database/` - Schema designs, migration scripts, performance reports
 
 ---
@@ -376,7 +376,7 @@ Manages infrastructure, CI/CD pipelines, deployments, and operational concerns.
 - Container orchestration
 - Cloud architecture
 
-### Workspace
+### Office
 `.agent/devops/` - Infrastructure configs, pipeline definitions, runbooks
 
 ---
@@ -405,7 +405,7 @@ Builds ETL pipelines, data processing workflows, and data infrastructure.
 - Performance optimization
 - Storage solutions
 
-### Workspace
+### Office
 `.agent/data/` - Pipeline designs, data models, processing scripts
 
 ---
@@ -435,7 +435,7 @@ Performs security audits, compliance checks, penetration testing, and security r
 - Threat modeling
 - Security best practices
 
-### Workspace
+### Office
 `.agent/security/` - Audit reports, vulnerability assessments, security recommendations
 
 ---
@@ -465,7 +465,7 @@ Handles product messaging, launches, content creation, and user communications.
 - Community engagement
 - Release announcements
 
-### Workspace
+### Office
 `.agent/marketing/` - Marketing plans, content drafts, campaign materials
 
 ---
