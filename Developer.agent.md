@@ -4,7 +4,7 @@ description: Writes code following mandatory coding principles
 argument-hint: "Write code that implements the following feature: [feature description]."
 model: GPT-5.2-Codex (copilot)
 agents: ['QA Engineer', 'Database Engineer', 'DevOps']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo', 'orbit/*']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo']
 handoffs: 
   - label: Code Review
     agent: QA Engineer
@@ -69,11 +69,11 @@ Your office is `.agent/developer/` - use it for implementation notes, code snipp
 
 Use GitHub Issues to track tasks. Ask for issue numbers when not provided and reference them in implementation notes, tests, and status updates.
 
-**Email:** `.agent/email/to-[name]-from-[yourname].email` for async communication. Check regularly.
+**Inbox:** Check `.agent/inbox/` regularly (every 10-15 minutes) for messages. Write status reports to `.agent/inbox/from-[yourname]-*.md`. For direct messages: `.agent/inbox/to-[name]-from-[yourname]-[topic].md`.
 
-**Orbit:** Register bot on first message. **CHECK CHAT EVERY 10-15 MINUTES** for Director updates or coordination needs. Post brief updates: starting task, made progress, hit blocker, ready for handoff, task done.
+**Status Updates:** Post to inbox when: starting task, made progress, hit blocker, ready for handoff, task done.
 
-**Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
+**Blockers:** Write to `.agent/inbox/to-director-from-[yourname]-blocked.md` immediately: what's blocking you, what you tried, who/what you need, urgency.
 
 ## Mandatory Coding Principles
 Use Deno only. For TypeScript, rely on Deno's standard library and built-in features.

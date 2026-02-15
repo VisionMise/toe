@@ -47,10 +47,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - ✅ Deno standard library
   - ✅ Web APIs
   - ✅ JSR packages (only if necessary)
-- Tightened Orbit communication workflow for all agents:
-  - Emphasized real-time bot registration
-  - Streamlined communication protocols
-  - Removed unnecessary verbose formatting
+- Migrated from Orbit to inbox-based communication:
+  - All agents use `.agent/inbox/` for coordination
+  - Simplified communication protocols
+  - File-based status updates and messages
 
 ### Purpose
 - Enforce pure Deno/TypeScript architecture with zero Node.js ecosystem dependencies
@@ -77,8 +77,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Marketing: Product messaging and launch coordination
 - Multi-agent orchestration with handoff mechanisms
 - Workspace organization system using `.agent/` directories
-- Inter-agent communication via email system (`.agent/email/`)
-- Orbit chatroom integration for status updates and coordination
+- Inter-agent communication via inbox system (`.agent/inbox/`)
 - Comprehensive documentation:
   - Getting Started guide
   - Architecture documentation
@@ -103,7 +102,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Developer: GitHub integration, browser automation (Playwright)
 - Project Manager: Mermaid diagram rendering, GitHub project management
 - QA Engineer: Browser automation for UI testing
-- All agents: Todo management and Orbit chatroom integration
+- All agents: Todo management and inbox-based communication
 
 [0.2.0]: https://github.com/username/toe/releases/tag/v0.2.0
 [0.1.0]: https://github.com/username/toe/releases/tag/v0.1.0

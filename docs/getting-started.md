@@ -88,8 +88,7 @@ Agents clean up their offices when work completes, removing outdated files and k
 ### Communication Methods
 Agents coordinate through:
 - **Handoffs** - Direct delegation between agents
-- **Email** - `.agent/email/` for asynchronous messages
-- **Orbit** - Chatroom for status updates and blockers
+- **Inbox** - `.agent/inbox/` for status updates, messages, and blockers
 
 ## Best Practices
 

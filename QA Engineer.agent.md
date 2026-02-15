@@ -4,7 +4,7 @@ description: Performs focused quality assurance on critical functionality and us
 argument-hint: Provide details about the software or feature to be tested, including any specific requirements or areas of focus.
 model: GPT-5.2
 agents: ['Developer']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'todo', 'orbit/*']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'playwright/*', 'todo']
 handoffs: 
   - label: Get a Developer on it
     agent: Developer
@@ -47,9 +47,11 @@ Your office is `.agent/qa/` - use it for test reports and quality assessments. K
 
 **Email:** `.agent/email/to-[name]-from-[yourname].email` for async communication. Check regularly.
 
-**Orbit:** Register bot on first message. **CHECK CHAT EVERY 10-15 MINUTES** for Developer fix notifications. Post: testing started, bugs found (severity), retesting fixes, tests passed.
+**Inbox:** Check `.agent/inbox/` regularly (every 10-15 minutes) for messages. Write status reports to `.agent/inbox/from-[yourname]-*.md`. For direct messages: `.agent/inbox/to-[name]-from-[yourname]-[topic].md`.
 
-**Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
+**Status Updates:** Post to inbox when: testing started, bugs found (severity), retesting fixes, tests passed.
+
+**Blockers:** Write to `.agent/inbox/to-director-from-[yourname]-blocked.md` immediately: what's blocking you, what you tried, who/what you need, urgency.
 
 **Communication:** Minimal emojis only.
 

@@ -4,7 +4,7 @@ description: Designs database schemas, writes migrations, optimizes queries, and
 argument-hint: "Design the database schema for [feature] or optimize [query/table]"
 model: Claude Sonnet 4.5 (copilot)
 agents: ['Developer', 'QA Engineer']
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo', 'orbit/*']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo']
 handoffs:
   - label: Get Developer Help
     agent: Developer
@@ -28,9 +28,11 @@ Use `.agent/database/` for schemas, migrations, and optimization notes.
 
 **Email:** `.agent/email/to-[name]-from-[yourname].email` for async communication. Check regularly.
 
-**Orbit:** Register bot on first message. **CHECK CHAT EVERY 10-15 MINUTES** for schema questions or migration timing. Post: schema ready, migration written, coordinating with DevOps, deployed.
+**Inbox:** Check `.agent/inbox/` regularly (every 10-15 minutes) for messages. Write status reports to `.agent/inbox/from-[yourname]-*.md`. For direct messages: `.agent/inbox/to-[name]-from-[yourname]-[topic].md`.
 
-**Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
+**Status Updates:** Post to inbox when: schema ready, migration written, coordinating with DevOps, deployed.
+
+**Blockers:** Write to `.agent/inbox/to-director-from-[yourname]-blocked.md` immediately: what's blocking you, what you tried, who/what you need, urgency.
 
 **Communication:** Minimal emojis only.
 

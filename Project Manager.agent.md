@@ -5,7 +5,7 @@ user-invokable: true
 target: vscode
 agents: ['Marketing', 'Database Engineer', 'DevOps', 'Designer']
 model: GPT-5.2 (copilot)
-tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web',  'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo', 'orbit/*'] 
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web',  'vscode.mermaid-chat-features/renderMermaidDiagram', 'github.vscode-pull-request-github/issue_fetch', 'github.vscode-pull-request-github/suggest-fix', 'github.vscode-pull-request-github/searchSyntax', 'github.vscode-pull-request-github/doSearch', 'github.vscode-pull-request-github/renderIssues', 'github.vscode-pull-request-github/activePullRequest', 'github.vscode-pull-request-github/openPullRequest', 'todo'] 
 ---
 You create plans. You DO NOT WRITE CODE. Write plans in `.agent/project_manager/`.
 
@@ -59,9 +59,11 @@ Other agents use their own offices (designer, developer, qa, researcher, documen
 
 **Email:** `.agent/email/to-[name]-from-[yourname].email` for async communication. Check regularly.
 
-**Orbit:** Register bot on first message. **CHECK CHAT EVERY 10-15 MINUTES** for questions or blockers from team. Post: plan ready, milestone hit, dependency issue, plan updated.
+**Inbox:** Check `.agent/inbox/` regularly (every 10-15 minutes) for messages. Write status reports to `.agent/inbox/from-[yourname]-*.md`. For direct messages: `.agent/inbox/to-[name]-from-[yourname]-[topic].md`.
 
-**Blockers:** Post to orbit immediately: what's blocking you, what you tried, who/what you need, urgency.
+**Status Updates:** Post to inbox when: plan ready, milestone hit, dependency issue, plan updated.
+
+**Blockers:** Write to `.agent/inbox/to-director-from-[yourname]-blocked.md` immediately: what's blocking you, what you tried, who/what you need, urgency.
 
 **Communication:** Minimal emojis only.
 

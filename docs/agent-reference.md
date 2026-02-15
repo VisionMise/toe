@@ -13,8 +13,7 @@ Complete reference for all 12 agent types in the TOE system.
 - **NO other emojis** - professional, clean communication only
 
 **Communication Channels:**
-- **Email**: `.agent/email/to-[name]-from-[yourname].email` for async
-- **Orbit**: Real-time chat for status, blockers, coordination
+- **Inbox**: `.agent/inbox/` for status updates, messages, and blockers
 - **GitHub Issues**: Task tracking and references
 
 ---
@@ -42,7 +41,7 @@ Builds complex software projects by hiring and coordinating a team of specialize
 Can hire: Project Manager, Researcher, Designer, Developer, QA Engineer, Documentation Specialist, Database Engineer, DevOps, Marketing, Data Engineer, Security Engineer
 
 ### Tools
-vscode, read, edit, search, execute, agent, web, playwright/*, todo, orbit/*
+vscode, read, edit, search, execute, agent, web, playwright/*, todo
 
 ### Typical Workflow
 1. Receive user request
@@ -76,7 +75,7 @@ Investigates technologies, best practices, and design patterns. Provides researc
 
 ### Communication
 - Email other agents with findings
-- Post major discoveries to orbit
+- Post major discoveries to inbox
 - Report to Director with recommendations
 
 ---
@@ -101,7 +100,7 @@ Creates project plans, timelines, manages milestones, and tracks progress. Break
 Can consult: Marketing, Database Engineer, DevOps, Designer
 
 ### Tools
-vscode, execute, read, agent, edit, search, web, mermaid, github/*, todo, orbit/*
+vscode, execute, read, agent, edit, search, web, mermaid, github/*, todo
 
 ### Deliverables
 - Summary (1 paragraph overview)
@@ -139,7 +138,7 @@ Designs user interfaces, user experiences, system architecture, and data models.
 "Take control of the design process. Always prioritize user experience over technical constraints."
 
 ### Tools
-vscode, execute, read, agent, edit, search, web, todo, orbit/*
+vscode, execute, read, agent, edit, search, web, todo
 
 ### Office
 `.agent/designer/` - Mockups, specs, design notes, architecture diagrams
@@ -155,7 +154,7 @@ For icon-heavy projects:
 
 ### Communication
 - Email for design reviews
-- Orbit for major design decisions
+- Inbox for major design decisions
 - Document rationale for key choices
 - **Emoji usage**: ✅ ❌ ℹ️ ⚠️ 🚫 only - no other emojis
 
@@ -181,7 +180,7 @@ Writes code following mandatory coding principles. Implements features, fixes bu
 Can consult: QA Engineer, Database Engineer, DevOps
 
 ### Tools
-vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*, todo, orbit/*
+vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*, todo
 
 ### Mandatory Coding Principles
 
@@ -226,7 +225,7 @@ vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*
 
 ### Communication
 - Email for technical questions
-- Orbit for status updates and blockers
+- Inbox for status updates and blockers
 - Reference GitHub issue numbers
 - **Emoji usage**: ✅ ❌ ℹ️ ⚠️ 🚫 only - no other emojis
 
@@ -268,7 +267,7 @@ Performs focused quality assurance on critical functionality and user-facing fea
 Can hire: Developer (for bug fixes or test writing)
 
 ### Tools
-vscode, execute, read, agent, edit, search, web, playwright/*, todo, orbit/*
+vscode, execute, read, agent, edit, search, web, playwright/*, todo
 
 ### Testing Types
 - **Default**: Targeted, efficient testing
@@ -279,7 +278,7 @@ vscode, execute, read, agent, edit, search, web, playwright/*, todo, orbit/*
 
 ### Communication
 - Send code back to Developer for iterations
-- Post test results to orbit
+- Post test results to inbox
 - Report high-priority issues immediately
 
 ---
@@ -314,11 +313,11 @@ Writes all forms of documentation: user guides, API docs, READMEs, changelogs, a
 ### Communication
 - Read from other `.agent/` offices for context
 - Email for clarification on features
-- Orbit for documentation task status
+- Inbox for documentation task status
 - Reference GitHub issues in docs
 
 ### Tools
-vscode, execute, read, agent, edit, search, web, todo, orbit/*
+vscode, execute, read, agent, edit, search, web, todo
 
 ---
 
@@ -473,22 +472,15 @@ Handles product messaging, launches, content creation, and user communications.
 ## Inter-Agent Communication
 
 ### Email System
-Format: `.agent/email/to-[recipient]-from-[sender].email`
-
-All agents can:
-- Send email to other agents
-- Read incoming mail regularly
-- Use for asynchronous communication
-
-### Orbit Chatroom
+### Inbox Communication
 All agents should:
-- Post status updates on major tasks
-- Report blockers with details
-- Coordinate parallel work
+- Post status updates to `.agent/inbox/from-[name]-*.md` on major tasks
+- Report blockers to `.agent/inbox/to-director-from-[name]-blocked.md` with details
+- Coordinate parallel work via inbox messages
 - Share milestones
 
 ### Blockers Protocol
-When blocked, post to orbit:
+When blocked, write to `.agent/inbox/to-director-from-[name]-blocked.md`:
 - What you're blocked on
 - What you've tried
 - Who/what needed to proceed

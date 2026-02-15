@@ -41,7 +41,7 @@ Agents can hire and delegate to other agents through handoff mechanisms. Each ag
 Each agent is defined in a `.agent.md` file with:
 - **Metadata** - Name, description, model, tools, handoffs
 - **Instructions** - Role-specific guidelines and rules
-- **Communication** - Email, orbit, and handoff protocols
+- **Communication** - Inbox protocols and handoff patterns
 
 ### Office Organization
 ```
@@ -67,16 +67,12 @@ project/
 - Used for sequential work dependencies
 - Example: Director → Developer → QA Engineer
 
-#### 2. Email (Asynchronous)
-- Messages stored in `.agent/email/`
-- Format: `to-[recipient]-from-[sender].email`
-- Used for non-blocking communication
-
-#### 3. Orbit Chatroom (Broadcast)
-- Project-wide status updates
-- Blocker notifications
-- Milestone announcements
-- Parallel work coordination
+#### 2. Inbox (Asynchronous & Status)
+- Messages stored in `.agent/inbox/`
+- Format: `to-[recipient]-from-[sender]-[topic].md` for direct messages
+- Format: `from-[sender]-[status].md` for status updates
+- Used for non-blocking communication, status updates, blocker notifications
+- Project-wide coordination and milestone announcements
 
 ## Workflow Patterns
 
@@ -126,7 +122,6 @@ Used for: Domain-specific expertise
 - **web** - Web access
 - **playwright/** - Browser automation
 - **todo** - Task management
-- **orbit/** - Chatroom integration
 
 ### Model Assignments
 Different agents use different AI models based on their needs:
@@ -193,7 +188,7 @@ Agents can be combined in custom patterns based on project needs. The Director a
 ## Best Practices
 
 1. **Clear Boundaries** - Each agent stays in their lane
-2. **Communication First** - Use email/orbit before escalating
+2. **Communication First** - Use inbox before escalating
 3. **Document Decisions** - Record architectural choices
 4. **Iterative Delivery** - Ship incrementally
 5. **Quality Gates** - QA before documentation
@@ -203,11 +198,11 @@ Agents can be combined in custom patterns based on project needs. The Director a
 
 ### Common Issues
 
-**Blocked Agent**: Post to orbit with blocker details, Director will reassign or unblock
+**Blocked Agent**: Write to `.agent/inbox/to-director-from-[name]-blocked.md` with blocker details, Director will reassign or unblock
 
 **Missing Context**: Agents should ask for clarification rather than assuming
 
-**Conflicting Work**: Orbit coordination prevents duplicate effort
+**Conflicting Work**: Inbox coordination prevents duplicate effort
 
 **Quality Issues**: QA sends back to Developer with specific feedback
 
