@@ -11,6 +11,10 @@ Thumbs.db
 
 # Agent workspace folders (generated during runtime)
 .agent/
+.agents/
+
+# Old 
+old/
 
 # Logs
 *.log

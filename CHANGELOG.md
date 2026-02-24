@@ -5,7 +5,39 @@ All notable changes to the TOE (Team of Experts) project will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Unreleased] - v2.0.0
+
+### Added
+- **Janitor Agent**: Organizes workspaces and verifies cleanup after task completion
+- **Morpheus Agent**: Creates custom agent skills and side-loads them into projects
+- **Junior Developer Agent**: Handles straightforward coding tasks and bug fixes
+- **Senior Developer Agent**: Handles complex architecture and code reviews
+- **Email Communication System**: Agents now use `.agents/email/` for async communication
+  - Email format: `to-[name]-from-[yourname].email`
+  - Replaces the previous inbox system
+
+### Changed
+- **Directory Structure**: All agent workspaces moved from `.agent/` to `.agents/`
+  - Updated all agent definitions and documentation
+  - Updated `.gitignore` to exclude `.agents/` folder
+- **Developer Agent Split**: Original Developer agent split into distinct Junior and Senior roles
+  - Junior Developer: Straightforward tasks, bug fixes, smaller features
+  - Senior Developer: Complex architecture, code reviews, mentoring
+- **DevOps Agent**: Refactored with clearer responsibilities and simplified structure
+- **All Agent Definitions**: Simplified and restructured for clarity
+  - Clearer Prime Directives
+  - Simplified Key Responsibilities
+  - Updated communication protocols (email instead of inbox)
+  - Changed reporting structure (all report to Project Manager)
+- **Documentation**: All references to `.agent/` updated to `.agents/` across docs
+
+### Removed
+- **Inbox Communication System**: Replaced by email-based communication
+- `Developer.agent.md`: Split into Junior Developer and Senior Developer
+- `Devops.agent.md`: Replaced by properly cased `DevOps.agent.md`
+- Old agent file structures and outdated communication patterns
+
+---
 
 ### Changed
 - **Office Terminology**: All `.agent/` folders now referred to as "offices"

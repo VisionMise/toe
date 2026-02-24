@@ -13,7 +13,8 @@ This repository contains agent definitions for a Director-led team of specialize
 - **Researcher** - Investigates technologies, best practices, and design patterns
 - **Project Manager** - Creates project plans, timelines, and manages milestones
 - **Designer** - Designs system architecture, UI/UX, and data models
-- **Developer** - Implements features and writes code
+- **Junior Developer** - Implements straightforward features and bug fixes
+- **Senior Developer** - Handles complex coding, architecture, and code reviews
 - **QA Engineer** - Tests software for quality, bugs, and compliance
 - **Documentation Specialist** - Creates user guides, API docs, and technical documentation
 
@@ -23,6 +24,10 @@ This repository contains agent definitions for a Director-led team of specialize
 - **Data Engineer** - Builds ETL pipelines, data processing workflows
 - **Security Engineer** - Performs security audits, compliance checks, penetration testing
 - **Marketing** - Handles product messaging, launches, and content creation
+
+### Support Team
+- **Janitor** - Organizes workspaces and archives project history after completion
+- **Morpheus** - Creates custom agent skills and side-loads them into projects
 
 ## How It Works
 

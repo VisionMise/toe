@@ -46,7 +46,7 @@ Each agent is defined in a `.agent.md` file with:
 ### Office Organization
 ```
 project/
-├── .agent/                    # Agent offices (not in version control)
+├── .agents/                    # Agent offices (not in version control)
 │   ├── developer/            # Developer office
 │   ├── designer/             # Designer office
 │   ├── qa/                   # QA office
@@ -68,7 +68,7 @@ project/
 - Example: Director → Developer → QA Engineer
 
 #### 2. Inbox (Asynchronous & Status)
-- Messages stored in `.agent/inbox/`
+- Messages stored in `.agents/inbox/`
 - Format: `to-[recipient]-from-[sender]-[topic].md` for direct messages
 - Format: `from-[sender]-[status].md` for status updates
 - Used for non-blocking communication, status updates, blocker notifications
@@ -192,13 +192,13 @@ Agents can be combined in custom patterns based on project needs. The Director a
 3. **Document Decisions** - Record architectural choices
 4. **Iterative Delivery** - Ship incrementally
 5. **Quality Gates** - QA before documentation
-6. **Clean Office** - Use `.agent/` for working files, clean up when done
+6. **Clean Office** - Use `.agents/` for working files, clean up when done
 
 ## Troubleshooting
 
 ### Common Issues
 
-**Blocked Agent**: Write to `.agent/inbox/to-director-from-[name]-blocked.md` with blocker details, Director will reassign or unblock
+**Blocked Agent**: Write to `.agents/inbox/to-director-from-[name]-blocked.md` with blocker details, Director will reassign or unblock
 
 **Missing Context**: Agents should ask for clarification rather than assuming
 

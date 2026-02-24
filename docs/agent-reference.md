@@ -13,7 +13,7 @@ Complete reference for all 12 agent types in the TOE system.
 - **NO other emojis** - professional, clean communication only
 
 **Communication Channels:**
-- **Inbox**: `.agent/inbox/` for status updates, messages, and blockers
+- **Inbox**: `.agents/inbox/` for status updates, messages, and blockers
 - **GitHub Issues**: Task tracking and references
 
 ---
@@ -35,7 +35,7 @@ Builds complex software projects by hiring and coordinating a team of specialize
 - Ensure quality delivery
 
 ### Prime Directive
-**NEVER creates, edits, or modifies ANY project files** (except `.agent/` office folders and `team-roster.md`)
+**NEVER creates, edits, or modifies ANY project files** (except `.agents/` office folders and `team-roster.md`)
 
 ### Available Agents
 Can hire: Project Manager, Researcher, Designer, Developer, QA Engineer, Documentation Specialist, Database Engineer, DevOps, Marketing, Data Engineer, Security Engineer
@@ -71,7 +71,7 @@ Investigates technologies, best practices, and design patterns. Provides researc
 - Provide recommendations with rationale
 
 ### Office
-`.agent/researcher/` - Research findings, comparisons, recommendations
+`.agents/researcher/` - Research findings, comparisons, recommendations
 
 ### Communication
 - Email other agents with findings
@@ -115,7 +115,7 @@ vscode, execute, read, agent, edit, search, web, mermaid, github/*, todo
 - **Comprehensive**: Projects >25K LOC, business-critical features, security-sensitive code
 
 ### Office
-`.agent/project_manager/` - Plans, timelines, status reports
+`.agents/project_manager/` - Plans, timelines, status reports
 
 ---
 
@@ -141,8 +141,8 @@ Designs user interfaces, user experiences, system architecture, and data models.
 vscode, execute, read, agent, edit, search, web, todo
 
 ### Office
-`.agent/designer/` - Mockups, specs, design notes, architecture diagrams
-`.agent/designer/icons/` - SVG icon set development
+`.agents/designer/` - Mockups, specs, design notes, architecture diagrams
+`.agents/designer/icons/` - SVG icon set development
 
 ### SVG Icon Workflow
 For icon-heavy projects:
@@ -221,7 +221,7 @@ vscode, execute, read, agent, edit, search, web, playwright/*, mermaid, github/*
 7. Request code review from QA
 
 ### Office
-`.agent/developer/` - Implementation notes, code snippets (clean up when tasks complete)
+`.agents/developer/` - Implementation notes, code snippets (clean up when tasks complete)
 
 ### Communication
 - Email for technical questions
@@ -274,7 +274,7 @@ vscode, execute, read, agent, edit, search, web, playwright/*, todo
 - **Comprehensive**: Only when explicitly requested (critical systems, >25K LOC)
 
 ### Office
-`.agent/qa/` - Test reports, quality assessments
+`.agents/qa/` - Test reports, quality assessments
 
 ### Communication
 - Send code back to Developer for iterations
@@ -307,11 +307,11 @@ Writes all forms of documentation: user guides, API docs, READMEs, changelogs, a
 - Getting started guides
 
 ### Office
-- `.agent/documentation/` - Drafts and working files
+- `.agents/documentation/` - Drafts and working files
 - `./docs/` - Final documentation outputs
 
 ### Communication
-- Read from other `.agent/` offices for context
+- Read from other `.agents/` offices for context
 - Email for clarification on features
 - Inbox for documentation task status
 - Reference GitHub issues in docs
@@ -346,7 +346,7 @@ Designs databases, optimizes queries, manages schemas, and handles database-rela
 - Database selection
 
 ### Office
-`.agent/database/` - Schema designs, migration scripts, performance reports
+`.agents/database/` - Schema designs, migration scripts, performance reports
 
 ---
 
@@ -376,7 +376,7 @@ Manages infrastructure, CI/CD pipelines, deployments, and operational concerns.
 - Cloud architecture
 
 ### Office
-`.agent/devops/` - Infrastructure configs, pipeline definitions, runbooks
+`.agents/devops/` - Infrastructure configs, pipeline definitions, runbooks
 
 ---
 
@@ -405,7 +405,7 @@ Builds ETL pipelines, data processing workflows, and data infrastructure.
 - Storage solutions
 
 ### Office
-`.agent/data/` - Pipeline designs, data models, processing scripts
+`.agents/data/` - Pipeline designs, data models, processing scripts
 
 ---
 
@@ -435,7 +435,7 @@ Performs security audits, compliance checks, penetration testing, and security r
 - Security best practices
 
 ### Office
-`.agent/security/` - Audit reports, vulnerability assessments, security recommendations
+`.agents/security/` - Audit reports, vulnerability assessments, security recommendations
 
 ---
 
@@ -465,7 +465,7 @@ Handles product messaging, launches, content creation, and user communications.
 - Release announcements
 
 ### Office
-`.agent/marketing/` - Marketing plans, content drafts, campaign materials
+`.agents/marketing/` - Marketing plans, content drafts, campaign materials
 
 ---
 
@@ -474,13 +474,13 @@ Handles product messaging, launches, content creation, and user communications.
 ### Email System
 ### Inbox Communication
 All agents should:
-- Post status updates to `.agent/inbox/from-[name]-*.md` on major tasks
-- Report blockers to `.agent/inbox/to-director-from-[name]-blocked.md` with details
+- Post status updates to `.agents/inbox/from-[name]-*.md` on major tasks
+- Report blockers to `.agents/inbox/to-director-from-[name]-blocked.md` with details
 - Coordinate parallel work via inbox messages
 - Share milestones
 
 ### Blockers Protocol
-When blocked, write to `.agent/inbox/to-director-from-[name]-blocked.md`:
+When blocked, write to `.agents/inbox/to-director-from-[name]-blocked.md`:
 - What you're blocked on
 - What you've tried
 - Who/what needed to proceed

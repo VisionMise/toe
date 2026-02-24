@@ -365,7 +365,7 @@ Let designers make design decisions, let developers choose implementation detail
 - Architecture questions? Designer or Researcher
 
 ### 4. Check Intermediate Outputs
-Review files in `.agent/` offices to see agent work in progress.
+Review files in `.agents/` offices to see agent work in progress.
 
 ### 5. Iterate When Needed
 It's okay to send work back for refinement. QA can return code to Developer, Director can ask for design revisions.
