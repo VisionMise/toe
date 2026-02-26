@@ -2,13 +2,13 @@
 
 ## System Overview
 
-TOE is built on a Director-led multi-agent architecture where a central orchestrator (Director) coordinates specialized agents to complete complex software projects.
+TOE is built on a Project Manager-led multi-agent architecture where a central orchestrator (Project Manager) coordinates specialized agents to complete complex software projects.
 
 ## Core Architecture Principles
 
 ### 1. Separation of Concerns
 Each agent has a specific domain of expertise:
-- **Coordination** - Director only
+- **Coordination** - Project Manager only
 - **Implementation** - Developers, DevOps, Database Engineers
 - **Quality** - QA Engineers
 - **Planning** - Project Managers
@@ -17,13 +17,13 @@ Each agent has a specific domain of expertise:
 - **Documentation** - Documentation Specialists
 
 ### 2. Hierarchical Orchestration
-The Director sits at the top of the hierarchy:
+The Project Manager sits at the top of the hierarchy:
 ```
-                    Director
+                 Project Manager
                        |
         +--------------+--------------+
         |              |              |
-    Researcher    Project Manager  Designer
+    Researcher      Designer      Developer
         |              |              |
         +------+-------+-------+------+
                |               |
@@ -53,7 +53,7 @@ project/
 │   ├── documentation/        # Documentation office
 │   ├── team-roster.md        # Active team members
 │   └── email/                # Inter-agent communication
-│       ├── to-developer-from-director.email
+│       ├── to-developer-from-pm.email
 │       └── to-qa-from-developer.email
 ├── docs/                      # Final documentation
 ├── src/                       # Source code
@@ -65,7 +65,7 @@ project/
 #### 1. Handoffs (Synchronous)
 - Direct delegation from one agent to another
 - Used for sequential work dependencies
-- Example: Director → Developer → QA Engineer
+- Example: Project Manager → Developer → QA Engineer
 
 #### 2. Inbox (Asynchronous & Status)
 - Messages stored in `.agents/inbox/`
@@ -78,27 +78,27 @@ project/
 
 ### Pattern 1: Sequential Pipeline
 ```
-Director → Researcher → Designer → Developer → QA → Documentation
+Project Manager → Researcher → Designer → Developer → QA → Documentation
 ```
 Used for: New features, complex implementations
 
 ### Pattern 2: Parallel Execution
 ```
-Director → Project Manager
-              ↓
-         +----+----+
-         ↓         ↓
-    Developer   Designer
-         ↓         ↓
-         +----+----+
-              ↓
-         QA Engineer
+Project Manager
+     ↓
+ +---+---+
+ ↓       ↓
+Developer Designer
+ ↓       ↓
+ +---+---+
+     ↓
+QA Engineer
 ```
 Used for: Large projects with independent work streams
 
 ### Pattern 3: Iterative Refinement
 ```
-Director → Developer → QA → Developer → QA → Done
+Project Manager → Developer → QA → Developer → QA → Done
                         ↑_________|
 ```
 Used for: Bug fixes, quality improvements
@@ -125,11 +125,8 @@ Used for: Domain-specific expertise
 
 ### Model Assignments
 Different agents use different AI models based on their needs:
-- **Director** - Claude Sonnet 4.5 (orchestration)
+- **Project Manager** - Claude Sonnet 4.5 (orchestration and planning)
 - **Developer** - GPT-5.2-Codex (code generation)
-- **Designer** - Claude Opus 4.6 (creative design)
-- **QA Engineer** - GPT-5.2 (testing)
-- **Project Manager** - GPT-5.2 (planning)
 
 ## Quality Assurance
 
@@ -147,7 +144,7 @@ Different agents use different AI models based on their needs:
 ## Scalability
 
 ### Small Projects (< 5K LOC)
-- Director + 2-3 specialists
+- Project Manager + 2-3 specialists
 - Single QA pass
 - Basic documentation
 
@@ -166,7 +163,7 @@ Different agents use different AI models based on their needs:
 
 ### Agent Boundaries
 - Each agent has well-defined permissions
-- Director cannot modify project files (only coordinates)
+- Project Manager cannot modify project files (only coordinates)
 - Developers commit to branches, not main
 
 ### Secret Management
@@ -180,10 +177,10 @@ Different agents use different AI models based on their needs:
 1. Create `[Agent Name].agent.md` file
 2. Define metadata (model, tools, handoffs)
 3. Write role-specific instructions
-4. Update Director's agent list
+4. Update Project Manager's agent list
 
 ### Custom Workflows
-Agents can be combined in custom patterns based on project needs. The Director adapts the team composition dynamically.
+Agents can be combined in custom patterns based on project needs. The Project Manager adapts the team composition dynamically.
 
 ## Best Practices
 
@@ -198,7 +195,7 @@ Agents can be combined in custom patterns based on project needs. The Director a
 
 ### Common Issues
 
-**Blocked Agent**: Write to `.agents/inbox/to-director-from-[name]-blocked.md` with blocker details, Director will reassign or unblock
+**Blocked Agent**: Write to `.agents/inbox/to-pm-from-[name]-blocked.md` with blocker details, Project Manager will reassign or unblock
 
 **Missing Context**: Agents should ask for clarification rather than assuming
 

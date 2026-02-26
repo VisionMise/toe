@@ -2,7 +2,7 @@
 
 ## Overview
 
-TOE (Team of Experts) is a multi-agent system that builds complex software projects by assembling specialized AI agents. The Director agent orchestrates the team, hiring the right specialists for each task and coordinating their work.
+TOE (Team of Experts) is a multi-agent system that builds complex software projects by assembling specialized AI agents. The Project Manager agent orchestrates the team, hiring the right specialists for each task and coordinating their work.
 
 ## Installation
 
@@ -22,14 +22,14 @@ TOE agent definitions are designed for AI agent orchestration systems that suppo
 
 ### Basic Usage
 
-1. **Invoke the Director** - Start by talking to the Director agent with your project description
+1. **Invoke the Project Manager** - Start by talking to the Project Manager agent with your project description
    
 2. **Describe Your Project** - Be clear about what you need:
    - "Build a REST API for user management"
    - "Create a data processing pipeline for CSV files"
    - "Set up CI/CD for a Deno application"
 
-3. **Let the Director Orchestrate** - The Director will:
+3. **Let the Project Manager Orchestrate** - The Project Manager will:
    - Analyze your requirements
    - Hire the appropriate specialists
    - Coordinate work between agents
@@ -40,7 +40,7 @@ TOE agent definitions are designed for AI agent orchestration systems that suppo
 ```
 User: "I need a web application with user authentication"
 
-Director: Analyzes requirements
+Project Manager: Analyzes requirements
   ↓
 Hires Researcher: Investigates auth best practices
   ↓
@@ -56,9 +56,8 @@ Hires Documentation Specialist: Creates user guides
 ## Understanding Agent Roles
 
 ### Core Team
-- **Director** - Your main point of contact, coordinates all other agents
+- **Project Manager** - Your main point of contact, coordinates all other agents, creates plans and manages milestones
 - **Researcher** - Investigates technologies and best practices
-- **Project Manager** - Creates plans, timelines, and manages tasks
 - **Designer** - Designs architecture, UI/UX, and data models
 - **Developer** - Writes code and implements features
 - **QA Engineer** - Tests and ensures quality
@@ -74,7 +73,7 @@ Hires Documentation Specialist: Creates user guides
 ## Key Concepts
 
 ### Delegation Over Implementation
-The Director never writes code or creates project files (except `.agents/` office folders). All implementation is delegated to specialists.
+The Project Manager never writes code or creates project files (except `.agents/` office folders). All implementation is delegated to specialists.
 
 ### Office Organization
 Agents create their working files in `.agents/<agent-name>/` offices:
@@ -93,7 +92,7 @@ Agents coordinate through:
 ## Best Practices
 
 1. **Be Specific** - Clear requirements lead to better results
-2. **Trust the Process** - Let the Director handle coordination
+2. **Trust the Process** - Let the Project Manager handle coordination
 3. **Start Simple** - Begin with core functionality, expand later
 4. **Review Outputs** - Check `.agents/` offices for intermediate work
 

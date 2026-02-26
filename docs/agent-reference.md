@@ -18,43 +18,6 @@ Complete reference for all 12 agent types in the TOE system.
 
 ---
 
-## Director
-
-**Role**: Orchestrator and Coordinator  
-**Model**: Claude Sonnet 4.5  
-**User Invokable**: Yes
-
-### Description
-Builds complex software projects by hiring and coordinating a team of specialized agents. The Director analyzes requirements, assembles the right team, manages handoffs, and ensures project delivery.
-
-### Key Responsibilities
-- Understand user requirements
-- Hire appropriate specialists
-- Coordinate dependencies and handoffs
-- Track project progress
-- Ensure quality delivery
-
-### Prime Directive
-**NEVER creates, edits, or modifies ANY project files** (except `.agents/` office folders and `team-roster.md`)
-
-### Available Agents
-Can hire: Project Manager, Researcher, Designer, Developer, QA Engineer, Documentation Specialist, Database Engineer, DevOps, Marketing, Data Engineer, Security Engineer
-
-### Tools
-vscode, read, edit, search, execute, agent, web, playwright/*, todo
-
-### Typical Workflow
-1. Receive user request
-2. Analyze requirements
-3. Hire Researcher (if needed for investigation)
-4. Hire Project Manager to create plan
-5. Hire Designer for architecture/UI
-6. Hire Developer for implementation
-7. Hire QA Engineer for testing
-8. Hire Documentation Specialist for docs
-
----
-
 ## Researcher
 
 **Role**: Investigation and Analysis  
@@ -76,7 +39,7 @@ Investigates technologies, best practices, and design patterns. Provides researc
 ### Communication
 - Email other agents with findings
 - Post major discoveries to inbox
-- Report to Director with recommendations
+- Report to Project Manager with recommendations
 
 ---
 
@@ -475,12 +438,12 @@ Handles product messaging, launches, content creation, and user communications.
 ### Inbox Communication
 All agents should:
 - Post status updates to `.agents/inbox/from-[name]-*.md` on major tasks
-- Report blockers to `.agents/inbox/to-director-from-[name]-blocked.md` with details
+- Report blockers to `.agents/inbox/to-pm-from-[name]-blocked.md` with details
 - Coordinate parallel work via inbox messages
 - Share milestones
 
 ### Blockers Protocol
-When blocked, write to `.agents/inbox/to-director-from-[name]-blocked.md`:
+When blocked, write to `.agents/inbox/to-pm-from-[name]-blocked.md`:
 - What you're blocked on
 - What you've tried
 - Who/what needed to proceed
@@ -492,9 +455,8 @@ When blocked, write to `.agents/inbox/to-director-from-[name]-blocked.md`:
 
 | Agent | Primary Role | Creates Code | Reviews Code | User Invokable |
 |-------|-------------|--------------|--------------|----------------|
-| Director | Orchestration | ❌ | ❌ | ✅ |
+| Project Manager | Orchestration & Planning | ❌ | ❌ | ✅ |
 | Researcher | Investigation | ❌ | ❌ | ❌ |
-| Project Manager | Planning | ❌ | ❌ | ✅ |
 | Designer | Design | ❌ | ❌ | ❌ |
 | Developer | Implementation | ✅ | ❌ | ❌ |
 | QA Engineer | Testing | ❌ | ✅ | ❌ |

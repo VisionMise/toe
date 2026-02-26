@@ -32,6 +32,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Documentation**: All references to `.agent/` updated to `.agents/` across docs
 
 ### Removed
+- **Director Agent**: Responsibilities merged into Project Manager agent
+  - Project Manager is now the primary entry point and orchestrator
+  - User interacts directly with Project Manager who coordinates all agents
+  - All references to Director throughout documentation updated to Project Manager
 - **Inbox Communication System**: Replaced by email-based communication
 - `Developer.agent.md`: Split into Junior Developer and Senior Developer
 - `Devops.agent.md`: Replaced by properly cased `DevOps.agent.md`
@@ -44,7 +48,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated all agent definitions to use "office" instead of "workspace"
   - Each agent maintains their own office (`.agent/[agent-name]/`)
   - Added office cleanup instructions to all agents
-  - Director instructs teams to clean up offices when work completes
+  - Project Manager instructs teams to clean up offices when work completes
   - Remove outdated files and keep only necessary artifacts
 - Updated documentation to reflect office terminology
 
@@ -95,9 +99,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of TOE multi-agent system
 - Core agent definitions for 12 specialized roles:
-  - Director: Project orchestration and coordination
+  - Project Manager: Project orchestration, coordination, planning, and task management
   - Researcher: Technology investigation and best practices
-  - Project Manager: Planning, timelines, and task management
   - Designer: UI/UX and system architecture design
   - Developer: Code implementation with Deno-first approach
   - QA Engineer: Targeted quality assurance and testing
@@ -121,7 +124,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub integration for issues and pull requests
 
 ### Principles Established
-- Delegation over implementation (Director as coordinator only)
+- Delegation over implementation (Project Manager as coordinator only)
 - Specialized expertise per agent
 - Clear handoffs between agents
 - Quality and documentation as first-class concerns
@@ -129,7 +132,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Targeted testing over exhaustive coverage
 
 ### Agent Capabilities
-- Director: Hires and coordinates all 11 specialized agents
+- Project Manager: Hires and coordinates all specialized agents, creates plans and manages milestones
 - All agents: Access to VS Code tools, file operations, terminal execution
 - Developer: GitHub integration, browser automation (Playwright)
 - Project Manager: Mermaid diagram rendering, GitHub project management

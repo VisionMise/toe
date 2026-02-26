@@ -11,29 +11,29 @@ Real-world examples of how TOE agents work together to complete projects.
 ### Workflow
 
 ```
-1. Director receives request
+1. Project Manager receives request
    └─> Analyzes: Need auth, CRUD operations, database, testing
 
-2. Director → Researcher
+2. Project Manager → Researcher
    └─> Task: "Research authentication best practices for REST APIs"
    └─> Output: Report on JWT vs sessions, security considerations
 
-3. Director → Designer
+3. Project Manager → Designer
    └─> Task: "Design the API structure and data models"
    └─> Output: API endpoints, database schema, authentication flow
 
-4. Director → Developer
+4. Project Manager → Developer
    └─> Task: "Implement the todo API with authentication"
    └─> Developer → Database Engineer (consultation on schema)
    └─> Output: Working API code, migrations
 
-5. Director → QA Engineer
+5. Project Manager → QA Engineer
    └─> Task: "Test the API endpoints and authentication"
    └─> Output: Test report, bugs identified
 
 6. Developer fixes bugs based on QA feedback
 
-7. Director → Documentation Specialist
+7. Project Manager → Documentation Specialist
    └─> Task: "Create API documentation"
    └─> Output: README.md, API reference, getting started guide
 ```
@@ -57,10 +57,10 @@ Instead of one person doing research, design, implementation, testing, and docs 
 ### Workflow
 
 ```
-1. Director receives request
+1. Project Manager receives request
    └─> Analyzes: ETL pipeline, data validation, error handling
 
-2. Director → Data Engineer
+2. Project Manager → Data Engineer
    └─> Task: "Design ETL pipeline for CSV to PostgreSQL"
    └─> Output: Pipeline architecture, data transformation logic
 
@@ -68,19 +68,19 @@ Instead of one person doing research, design, implementation, testing, and docs 
    └─> Topic: Optimal schema for bulk inserts
    └─> Output: Schema design, indexing strategy
 
-4. Director → Developer
+4. Project Manager → Developer
    └─> Task: "Implement the data pipeline"
    └─> Output: ETL code in Deno
 
-5. Director → QA Engineer
+5. Project Manager → QA Engineer
    └─> Task: "Test pipeline with sample CSV files"
    └─> Output: Validation of data integrity, performance metrics
 
-6. Director → DevOps
+6. Project Manager → DevOps
    └─> Task: "Set up scheduled pipeline execution"
    └─> Output: Cron job configuration, monitoring setup
 
-7. Director → Documentation Specialist
+7. Project Manager → Documentation Specialist
    └─> Task: "Document the pipeline usage"
    └─> Output: Usage guide, troubleshooting tips
 ```
@@ -101,10 +101,10 @@ Instead of one person doing research, design, implementation, testing, and docs 
 ### Workflow
 
 ```
-1. Director receives request
+1. Project Manager receives request
    └─> Analyzes: Security review, vulnerability testing
 
-2. Director → Security Engineer
+2. Project Manager → Security Engineer
    └─> Task: "Audit authentication system for vulnerabilities"
    └─> Output: Security assessment report
 
@@ -114,15 +114,15 @@ Instead of one person doing research, design, implementation, testing, and docs 
    - No CSRF protection
    - Insufficient session timeout
 
-4. Director → Developer
+4. Project Manager → Developer
    └─> Task: "Fix security issues identified in audit"
    └─> Output: Updated authentication code
 
-5. Director → Security Engineer
+5. Project Manager → Security Engineer
    └─> Task: "Re-audit the fixes"
    └─> Output: Verification report
 
-6. Director → Documentation Specialist
+6. Project Manager → Documentation Specialist
    └─> Task: "Document security best practices for the team"
    └─> Output: Security guidelines document
 ```
@@ -142,14 +142,14 @@ Instead of one person doing research, design, implementation, testing, and docs 
 ### Workflow
 
 ```
-1. Director receives request
+1. Project Manager receives request
    └─> Analyzes: Need CI/CD, infrastructure, deployment strategy
 
-2. Director → Project Manager
+2. Project Manager → Project Manager
    └─> Task: "Plan the DevOps setup"
    └─> Output: Implementation plan with phases
 
-3. Director → DevOps
+3. Project Manager → DevOps
    └─> Task: "Set up CI/CD pipeline"
    └─> Output: GitHub Actions workflows
 
@@ -157,15 +157,15 @@ Instead of one person doing research, design, implementation, testing, and docs 
    └─> Topic: Build requirements and dependencies
    └─> Output: Build script specifications
 
-5. Director → DevOps
+5. Project Manager → DevOps
    └─> Task: "Configure production infrastructure"
    └─> Output: Cloud infrastructure (containers, networking)
 
-6. Director → QA Engineer
+6. Project Manager → QA Engineer
    └─> Task: "Test the deployment pipeline"
    └─> Output: Verification of automated deployments
 
-7. Director → Documentation Specialist
+7. Project Manager → Documentation Specialist
    └─> Task: "Document deployment procedures"
    └─> Output: Deployment runbook, rollback procedures
 ```
@@ -185,39 +185,39 @@ Instead of one person doing research, design, implementation, testing, and docs 
 ### Parallel Workflow
 
 ```
-1. Director receives request
+1. Project Manager receives request
    └─> Analyzes: Need design, implementation, testing, docs, marketing
 
-2. Director kicks off parallel tracks:
+2. Project Manager kicks off parallel tracks:
 
    Track A: Research & Design
    ├─> Researcher: "Investigate notification systems"
    └─> Designer: "Design notification UI and data model"
 
    Track B: Planning
-   └─> Project Manager: "Create implementation plan"
+   └─> (Project Manager creates plan internally)
 
 3. After Research & Design complete:
 
-   Director → Developer
+   Project Manager → Developer
    └─> Task: "Implement notifications feature"
    └─> Developer working...
    
    [Meanwhile, in parallel...]
    
-   Director → Marketing
+   Project Manager → Marketing
    └─> Task: "Prepare announcement for notifications feature"
    └─> Marketing creating content...
 
 4. Developer completes implementation:
 
-   Director → QA Engineer
+   Project Manager → QA Engineer
    └─> Task: "Test notifications feature"
    └─> Output: Test report, minor bugs found
 
 5. Developer fixes bugs, QA re-tests
 
-6. Director finalizes:
+6. Project Manager finalizes:
    ├─> Documentation Specialist: "Create user guide for notifications"
    ├─> Marketing: "Finalize and schedule announcement"
    └─> DevOps: "Deploy notifications feature to production"
@@ -246,27 +246,27 @@ Multiple agents work in parallel:
 ### Workflow
 
 ```
-1. Director receives request
+1. Project Manager receives request
    └─> Analyzes: Database migration, data integrity, downtime
 
-2. Director → Database Engineer
+2. Project Manager → Database Engineer
    └─> Task: "Plan PostgreSQL migration and schema mapping"
    └─> Output: Migration strategy, schema differences
 
-3. Director → Developer
+3. Project Manager → Developer
    └─> Task: "Write migration scripts"
    └─> Database Engineer (consultation during development)
    └─> Output: Migration scripts, data transformation code
 
-4. Director → QA Engineer
+4. Project Manager → QA Engineer
    └─> Task: "Test migration with copy of production data"
    └─> Output: Verification of data integrity
 
-5. Director → DevOps
+5. Project Manager → DevOps
    └─> Task: "Plan production migration with minimal downtime"
    └─> Output: Migration runbook, rollback plan
 
-6. Director → Documentation Specialist
+6. Project Manager → Documentation Specialist
    └─> Task: "Document schema changes and migration"
    └─> Output: CHANGELOG.md update, architecture doc update
 ```
@@ -287,23 +287,23 @@ Multiple agents work in parallel:
 ### Workflow
 
 ```
-1. Director receives request
+1. Project Manager receives request
    └─> Analyzes: Performance issue, needs investigation
 
-2. Director → QA Engineer
+2. Project Manager → QA Engineer
    └─> Task: "Reproduce and characterize the performance issue"
    └─> Output: Performance profile, specific slow endpoints
 
-3. Director → Developer
+3. Project Manager → Developer
    └─> Task: "Investigate and fix slow queries"
    └─> Developer → Database Engineer (consultation)
    └─> Output: Optimized database queries, added indexes
 
-4. Director → QA Engineer
+4. Project Manager → QA Engineer
    └─> Task: "Verify performance improvements"
    └─> Output: Before/after metrics showing 80% improvement
 
-5. Director → Documentation Specialist
+5. Project Manager → Documentation Specialist
    └─> Task: "Update changelog"
    └─> Output: CHANGELOG.md entry for performance fix
 ```
@@ -328,7 +328,7 @@ Research → Design → Develop → Test → Document
 Best for: Large projects, independent work streams
 ```
         ┌─> Developer (Backend)
-Director├─> Developer (Frontend)
+Project Manager├─> Developer (Frontend)
         └─> Marketing (Content)
         
 All complete → QA Tests → Deploy
@@ -368,15 +368,15 @@ Let designers make design decisions, let developers choose implementation detail
 Review files in `.agents/` offices to see agent work in progress.
 
 ### 5. Iterate When Needed
-It's okay to send work back for refinement. QA can return code to Developer, Director can ask for design revisions.
+It's okay to send work back for refinement. QA can return code to Developer, Project Manager can ask for design revisions.
 
 ---
 
 ## Anti-Patterns to Avoid
 
-### ❌ Director Implementing
-**Wrong**: Director creates project files
-**Right**: Director hires Developer to create files
+### ❌ Project Manager Implementing
+**Wrong**: Project Manager creates project files
+**Right**: Project Manager hires Developer to create files
 
 ### ❌ Skipping QA
 **Wrong**: Deploy directly after development

@@ -1,10 +1,11 @@
 ---
 name: Senior Developer
 description: Handles complex coding tasks, architecture design, code reviews, and mentoring junior developers.
-user-invokable: false
+user-invokable: true
 target: vscode
 model: [Claude Opus 4.6 (copilot), Claude Opus 4.5 (copilot), GPT-5.2-Codex (copilot)]
 tools: [vscode, execute, read, agent, edit, search, web, 'playwright/*', todo]
+agents: ['Junior Developer']
 ---
 
 # Senior Developer Agent

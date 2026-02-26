@@ -4,14 +4,13 @@ A multi-agent system for building complex software projects by assembling specia
 
 ## Overview
 
-This repository contains agent definitions for a Director-led team of specialized AI experts. The Director orchestrates complex software projects by hiring and coordinating agents with specific expertise.
+This repository contains agent definitions for a Project Manager-led team of specialized AI experts. The Project Manager orchestrates complex software projects by hiring and coordinating agents with specific expertise.
 
 ## Available Agents
 
 ### Core Team
-- **Director** - Orchestrates projects, hires and coordinates specialized agents
+- **Project Manager** - Orchestrates projects, hires and coordinates specialized agents, creates plans and manages milestones
 - **Researcher** - Investigates technologies, best practices, and design patterns
-- **Project Manager** - Creates project plans, timelines, and manages milestones
 - **Designer** - Designs system architecture, UI/UX, and data models
 - **Junior Developer** - Implements straightforward features and bug fixes
 - **Senior Developer** - Handles complex coding, architecture, and code reviews
@@ -32,14 +31,14 @@ This repository contains agent definitions for a Director-led team of specialize
 ## How It Works
 
 1. **User Request** - Describe what you need built
-2. **Director Analysis** - Director understands requirements and determines approach
-3. **Team Assembly** - Director hires the right specialists for the job
-4. **Coordination** - Director manages handoffs, dependencies, and parallel work
+2. **Project Manager Analysis** - Project Manager understands requirements and determines approach
+3. **Team Assembly** - Project Manager hires the right specialists for the job
+4. **Coordination** - Project Manager manages handoffs, dependencies, and parallel work
 5. **Delivery** - Completed project with all artifacts, tests, and documentation
 
 ## Key Principles
 
-- **Delegation Over Implementation** - Director never writes code, only coordinates
+- **Delegation Over Implementation** - Project Manager never writes code, only coordinates
 - **Specialized Expertise** - Each agent is an expert in their domain
 - **Clear Handoffs** - Work products flow seamlessly between agents
 - **Quality Focus** - Testing and documentation are first-class concerns

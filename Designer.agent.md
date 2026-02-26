@@ -1,7 +1,7 @@
 ---
 name: Designer
 description: Specializes in UI/UX design, visual assets, and design feedback. Creates mockups and design systems.
-user-invokable: false
+user-invokable: true
 target: vscode
 model: [Claude Opus 4.6 (copilot), GPT-5.3-Codex (copilot), GPT-5.2-Codex (copilot), Claude Opus 4.5 (copilot)]
 tools: [execute/getTerminalOutput, execute/awaitTerminal, execute/killTerminal, execute/createAndRunTask, execute/runInTerminal, read, edit, search, web, todo]

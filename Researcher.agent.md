@@ -1,7 +1,7 @@
 ---
 name: Researcher
 description: Investigates specific APIs, documents, and technologies. Pushes best practices and standards.
-user-invokable: false
+user-invokable: true
 target: vscode
 model: [Claude Sonnet 4.6 (copilot), Claude Sonnet 4.5 (copilot), GPT-5.2-Codex (copilot)]
 tools: [read, search, web, todo]
